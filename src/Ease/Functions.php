@@ -180,7 +180,7 @@ class Functions
     }
 
     /**
-     * Odstraní z textu diakritiku.
+     * Removes diacritics from the text.
      *
      * @param string $text
      */
@@ -277,11 +277,10 @@ class Functions
     }
 
     /**
-     * Encrypt.
-     * Šifrování.
-     *
+     * Encryption.
+     *      
      * @param string $textToEncrypt plaintext
-     * @param string $encryptKey    klíč
+     * @param string $encryptKey    key
      *
      * @return string encrypted text
      */
@@ -296,8 +295,8 @@ class Functions
     /**
      * Decryptor
      *
-     * @param string $textToDecrypt šifrovaný text
-     * @param string $encryptKey    šifrovací klíč
+     * @param string $textToDecrypt encrypted text
+     * @param string $encryptKey    encryption key
      *
      * @return string
      */
@@ -332,7 +331,7 @@ class Functions
     }
 
     /**
-     * Vrací náhodný řetězec dané délky.
+     * Returns random strip of given length.
      *
      * @param int $length
      *
@@ -366,7 +365,7 @@ class Functions
     }
 
     /**
-     * Pomocná funkce pro překódování vícerozměrného pole.
+     * Helping function for recodong a multidimensional field.
      *
      * @see recursiveIconv
      *
@@ -381,7 +380,7 @@ class Functions
     }
 
     /**
-     * Zobrazí velikost souboru v srozumitelném tvaru.
+     * Shows the file size in an understandable form.
      *
      * @param int $filesize bytů
      *
@@ -428,10 +427,9 @@ class Functions
     }
 
     /**
-     * Filter Only letters from string.
-     * Pouze malé a velké písmena.
+     * Filter only letters (big and small) from string. 
      *
-     * @return string text bez zvláštních znaků
+     * @return string text without special characters
      */
     public static function lettersOnly($text)
     {
